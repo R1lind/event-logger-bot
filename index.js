@@ -72,7 +72,7 @@ const commands = [
 ].map(command => command.toJSON());
 
 // --- REGISTER COMMANDS ---
-client.once('ready', async () => {  // FIXED: ready event name
+client.once('clientReady', async () => {  // FIXED: ready event name
     console.log(`Logged in as ${client.user.tag}!`);
 
     if (GUILD_ID) {
