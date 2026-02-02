@@ -3,7 +3,7 @@ const fs = require('fs');
 const { Client, GatewayIntentBits, EmbedBuilder, ActionRowBuilder, ModalBuilder, TextInputBuilder, TextInputStyle, StringSelectMenuBuilder, PermissionsBitField, SlashCommandBuilder, REST, Routes, MessageFlags } = require('discord.js');
 require('dotenv').config(); // Load .env file
 
-// --- CONFIGURATION ---
+// --- CONFIGURATIONN ---
 const config = JSON.parse(fs.readFileSync('config.json', 'utf8'));
 const BOT_TOKEN = process.env.DISCORD_TOKEN;
 const CLIENT_ID = process.env.CLIENT_ID;
